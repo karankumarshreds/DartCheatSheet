@@ -1,5 +1,6 @@
 void main () {
   var deck = new Deck();
+  deck.shuffle();
   for (var card in deck.cards) {
     print('${card.rank} of ${card.suit}');
   }
@@ -17,6 +18,10 @@ class Deck {
         this.cards.add(card);
       }
     }
+  }
+  // inbuilt array method 
+  shuffle() {
+     this.cards.shuffle();
   }
 }
 
