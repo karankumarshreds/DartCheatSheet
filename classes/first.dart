@@ -14,7 +14,7 @@ class Person {
   }
 }
 
-// same as above but with short hand syntax 
+/* same as above but with short hand syntax */
 
 void main() {
   var person = new Person("Karan Kumar");
