@@ -1,6 +1,8 @@
 void main () {
   var deck = new Deck();
-  print(deck.cards); // array of instance of cards
+  for (var card in deck.cards) {
+    print('${card.rank} of ${card.suit}');
+  }
 }
 
 class Deck {
